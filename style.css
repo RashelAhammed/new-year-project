@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: end;
   padding-right: 150px;
-  color: var(--dark-01, #151414);
+  color: (#151414);
   padding-bottom:150 px;
 }
 
@@ -16,6 +16,12 @@
 
 .header-section {
   background-image: url("./images/banner/banner1.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
   
 }
 
