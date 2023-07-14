@@ -193,7 +193,7 @@
 }
 
 /* media queary for mediam divice  */
-@media screen and (min-width:644px) and (max-width:992px) {
+@media screen and (min-width:577px) and (max-width:992px) {
   .header-container {
     width: 100%;
     height: auto;
