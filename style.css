@@ -6,7 +6,7 @@
   justify-content: end;
   padding-right: 150px;
   color: (#151414);
-  padding-bottom:150 px;
+  padding-bottom: 150 px;
 }
 
 * {
@@ -22,68 +22,77 @@
   background-size: cover;
 
 
-  
+
 }
 
 .header-title {
   font-size: 40px;
   flex-shrink: 0;
 }
-.header-p{
-  font-size:20px;
+
+.header-p {
+  font-size: 20px;
   padding: 10px;
-  
+
 }
-.button-primary{
-height: 44px;
-width: 160px;
-border-radius: 5px;
-background-color:#F15B22;
-margin-top: 10px;
-color: white;
-border: 0;
+
+.button-primary {
+  height: 44px;
+  width: 160px;
+  border-radius: 5px;
+  background-color: #F15B22;
+  margin-top: 10px;
+  color: white;
+  border: 0;
 }
-.failure-img{
+
+.failure-img {
   border-radius: 227.429px;
   background: rgba(229, 71, 8, 0.2);
   width: 400px;
   clip-path: circle(60%);
-  
+
 }
-.failure-container{
+
+.failure-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 700px;
   padding: 50px;
   background-color: #FFF;
-  
+
 }
-.failur-title{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.failur-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 40px;
-  padding:10px;
+  padding: 10px;
   font-weight: 700;
 }
-.plane-title{
+
+.plane-title {
   text-align: center;
   font-size: 30px;
   font-weight: 600;
 }
-.plan-container{
+
+.plan-container {
   display: flex;
   align-items: center;
-  justify-content:space-evenly ;
+  justify-content: space-evenly;
   padding: 50px;
 
 }
-.plane-icon{
+
+.plane-icon {
   width: 70px;
 }
-.call-me-container{
+
+.call-me-container {
   width: 80%;
-  height:300px ;
-  background-image: url("./images/watch.png"),linear-gradient(to left, rgba(255,0,0,0), rgba(243, 87, 9, 0.887));
+  height: 300px;
+  background-image: url("./images/watch.png"), linear-gradient(to left, rgba(255, 0, 0, 0), rgba(243, 87, 9, 0.887));
   border: 0;
   background-blend-mode: lighten;
   border-radius: 5px;
@@ -92,20 +101,23 @@ border: 0;
   padding: 30px;
 
 }
-.call-me{
+
+.call-me {
   padding-left: 64px;
-  padding-top:40px;
-  color:rgb(49, 56, 64);
+  padding-top: 40px;
+  color: rgb(49, 56, 64);
   font-size: 20px;
   font-weight: 500;
-  
+
 }
-.call-me-button{
+
+.call-me-button {
   padding: 10px;
   border-radius: 7px;
-  border:0;
+  border: 0;
 }
-.footer-container{
+
+.footer-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -115,6 +127,101 @@ border: 0;
   color: white;
   margin-top: 100px;
 }
-.future-title{
+
+.future-title {
   margin-left: 10px;
+}
+
+/* media queary */
+/* media queary for small divice  */
+@media screen and (max-width:640px) {
+  .header-title {
+    padding-left: 20px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .button-primary {
+    margin-left: 3.5em;
+  }
+
+  .header-p {
+    padding-left: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .failure-img {
+    width: 300px;
+  }
+
+  .header-container {
+    height: 85vh;
+    padding-right: 20px;
+
+  }
+
+  .header-section {
+    height: 85vh;
+    background-image: none;
+    background-size: cover;
+    padding-right: 0;
+    width: ;
+  }
+.failure-container{
+  flex-direction:column ;
+}
+.plan-container{
+  flex-direction: column;
+  height: 80vh;
+  padding: 30px;
+}
+.plane-title{
+  margin-top: 20px;
+}
+.failur-title{
+  font-size: 30px;
+}
+.footer-container{
+  margin-top: 30px;
+  flex-direction: column;
+  
+  
+}
+
+}
+
+/* media queary for mediam divice  */
+@media screen and (min-width:644px) and (max-width:992px) {
+  .header-container {
+    width: 100%;
+    height: auto;
+    padding-top: 200px;
+    padding-right: 0;
+
+  }
+
+  .header-section {
+    height: 85vh;
+    background-image: none;
+    background-size: cover;
+    padding-right: 0;
+    background-image: url(images/banner/banner3.png);
+    color:black;
+    font-weight: 700;
+  }
+
+  .header-title {
+    font-size: 60px;
+  }
+
+  .header-p {
+    font-size: 30px;
+  }
+
+  .failure-container {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+  }
 }
